@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #222C2A;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #3D4044;
+  font-weight: 400;
+}
+
+section {
+  padding: 50px 0;
+  height: 80vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.lh-green {
+  color: #63C4C7;
+}
+
+
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1600px;
+  position: relative;
+}
+
+.header {
+  background-color: #3D4044;
+  color: #FAFAFA;
+
+}
+
+.nav {
+  width: 100%;
+  visibility: hidden;
+  height: 0;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.nav-item {
+  list-style-type: none;
+  padding: 8px 8px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #FAFAFA;
+  font-family: 'Quicksand', sans-serif;
+  font-size: .9rem;
+}
+
+.active {
+  font-weight: 700;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #FAFAFA;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #072A2D;
+  color: white;
+  transition: opacity 250ms ease;
+  position: absolute;
+  right: 5%;
+  top: 35px;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: .75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+} 
+
+.btn {
+  font-size: 1rem;
+  border-radius: 25px;
+  padding: 3px 10px 3px 10px;
+  color: white;
+  background-color: #14C3C9;
+}
+
+/* Who Section */
+.who {
+  text-align: center;
+  background-color: aquamarine;
+}
+
+/* Services Section */
+
+.services {
+  text-align: center;
+  background-color: lightblue;
+}
+
+.about {
+  text-align: center;
+  background-color: lightgoldenrodyellow;
+}
+
+.contact {
+  text-align: center;
+  background-color: lightslategrey;
+}
+
+.inverse {
+  color: white;
+  background-color: #333;
+}
+
+
+@media only screen and (min-width: 800px) {
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: 400px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav {
+      visibility: visible;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      height: auto;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+}
