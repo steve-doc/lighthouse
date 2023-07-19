@@ -58,7 +58,6 @@ const observer = new IntersectionObserver(function(entries, observer) {
     if(!entry.isIntersecting) {
       return;
     }
-    console.log(entry.target);
     // entry.target.classList.toggle('inverse')
   })
 }, options);
@@ -69,7 +68,7 @@ sections.forEach(section => {
 
 const appearOptions = {
   threshold: 1,
-  rootMargin: "0px 0px -50px 0px"
+  rootMargin: "0px 0px -25px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver
