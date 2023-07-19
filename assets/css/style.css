@@ -22,7 +22,7 @@ h1, h2, h3, h4 {
 
 section {
   padding: 50px 0;
-  height: 80vh;
+  /* height: 80vh; */
 }
 
 img {
@@ -33,12 +33,10 @@ img {
   color: #63C4C7;
 }
 
-
-
 .container{
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1200px;
   position: relative;
 }
 
@@ -130,16 +128,70 @@ img {
 
 .btn {
   font-size: 1rem;
+  border: none;
   border-radius: 25px;
   padding: 3px 10px 3px 10px;
   color: white;
-  background-color: #14C3C9;
+  background-color: #1fa8ad;
+}
+
+.btn:hover, .btn:focus {
+  outline: 2px solid black;
+  background-color: #14cdd3;
+}
+
+.col {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.card-image {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+/* Hero Section */
+
+.hero {
+  padding: 0;
+  background-color: #3D4044;
+}
+.swiper {
+  height: 70vh;
+  width: 100%;
+}
+
+.swipper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  background-size:cover;
+  background-position: center;
+  font-size: 60px;
+  color: #FAFAFA;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }
 
 /* Who Section */
 .who {
   text-align: center;
-  background-color: aquamarine;
+  background-color: rgb(219, 219, 220);
 }
 
 /* Services Section */
@@ -159,16 +211,39 @@ img {
   background-color: lightslategrey;
 }
 
-.inverse {
-  color: white;
-  background-color: #333;
+footer {
+  background-color: #3D4044;
+  color: #FAFAFA;
+  height: 30vh;
+}
+
+footer img {
+
 }
 
 
 @media only screen and (min-width: 800px) {
   
+  .container {
+    width: 90%;
+  }
+
   .row {
     display: flex;
+    /* justify-content: space-between; */
+  }
+
+  .col {
+    width: 45%;
+    padding: 0 5px;
+  }
+
+/* .who-col {
+  justify-content: space-evenly;
+} */
+
+  .wrap {
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 

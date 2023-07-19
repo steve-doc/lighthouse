@@ -1,83 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <title>Lighthouse Web Development</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <title>Lighthouse Web Development</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container row">
+        <a class="logo row">
+          <img
+            src="/assets/images/lighthouse-logo.png"
+            alt="Lighthouse logo"
+            width="200"
+          />
+        </a>
 
-</head>
-<body>
-  <header class="header">
-    <div class="container row">
-      <a class="logo row">
-        <img src="/assets/images/lighthouse-logo.png" alt="Lighthouse logo" width="200">
-      </a> 
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
 
-      <button class="nav-toggle" aria-label="open navigation">
-        <span class="hamburger"></span>
-      </button>
+        <nav class="nav">
+          <ul class="nav-list row">
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <button class="nav-item btn">
+              <a class="nav-link" href="/index.html">Book Free Consultation</a>
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Slider main container -->
       
-      <nav class="nav">
-        <ul class="nav-list row">
-          <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-          <button class="nav-item btn"><a class="nav-link" href="/index.html">Free Proposal</a></button>
-        </ul>
-      </nav>
-
-      
-    </div>
-    
-  </header>
-
-  <main>
-    <section class="who">
-      <div class="container">
-        <h1>We are focused on your Business</h1>
-
-        <div class="row">
-          <div class="personal col">
-            <h2>We provide a Personalised service</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates eum dolorum harum minima eos provident, voluptatem atque temporibus optio. Nobis, soluta ipsa. Voluptates cum quam ipsum porro tempora maiores?</p>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" data-swiper-autoplay="4000" style="background-image: url(/assets/images/mens-clothes.jpg)"></div>
+            <div class="swiper-slide" data-swiper-autoplay="4000" style="background-image: url(/assets/images/cross-fit.jpg);"></div>
+            <div class="swiper-slide" data-swiper-autoplay="4000" style="background-image: url(/assets/images/pilates.jpg)"></div>
+            <div class="swiper-slide" data-swiper-autoplay="4000" style="background-image: url(/assets/images/coffee-shop.jpg)"></div>
+            <div class="swiper-slide" data-swiper-autoplay="4000" style="background-image: url(/assets/images/flower-shop.jpg);"></div>
+            <div class="swiper-slide" data-swiper-autoplay="4000" style="background-image: url(/assets/images/hairdresser.jpg)"></div>
+            <div class="swiper-slide" data-swiper-autoplay="4000" style="background-image: url(/assets/images/dentist.jpg)"></div>
           </div>
-          <div class="personal col">
-            <h2>We focus on your business</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae temporibus doloribus dolor odit vel, dicta laudantium at totam consectetur voluptate harum praesentium eaque natus, sunt rerum quisquam voluptates, neque quam!</p>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+
+      <section class="who">
+        <div class="container">
+          <h1>We are focused on your Business</h1>
+
+          <div class="row wrap">
+            <div class="personal col fade-in">
+              <img
+                class="card-image"
+                src="https://picsum.photos/400/300"
+                alt="sample image"
+              />
+              <h2>We provide a Personalised service</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                voluptates eum dolorum harum minima eos provident, voluptatem
+                atque temporibus optio. Nobis, soluta ipsa. Voluptates cum quam
+                ipsum porro tempora maiores?
+              </p>
+            </div>
+            <div class="business col fade-in">
+              <img
+                class="card-image"
+                src="https://picsum.photos/400/300"
+                alt="sample image"
+              />
+              <h2>We focus on your business</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                temporibus doloribus dolor odit vel, dicta laudantium at totam
+                consectetur voluptate harum praesentium eaque natus, sunt rerum
+                quisquam voluptates, neque quam!
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      
-    </section>
+      </section>
 
-    <section class="services">
+      <section class="services">
+        <div class="container">
+          <h1>Our Website Development Services</h1>
+
+          <div class="row wrap">
+            <div class="personal col fade-in">
+              <img
+                class="card-image"
+                src="https://picsum.photos/400/300"
+                alt="sample image"
+              />
+              <h2>Website Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                voluptates eum dolorum harum minima eos provident, voluptatem
+                atque temporibus optio. Nobis, soluta ipsa. Voluptates cum quam
+                ipsum porro tempora maiores?
+              </p>
+            </div>
+            <div class="business col fade-in">
+              <img
+                class="card-image"
+                src="https://picsum.photos/400/300"
+                alt="sample image"
+              />
+              <h2>website Redesign</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                temporibus doloribus dolor odit vel, dicta laudantium at totam
+                consectetur voluptate harum praesentium eaque natus, sunt rerum
+                quisquam voluptates, neque quam!
+              </p>
+            </div>
+            <div class="personal col fade-in">
+              <img
+                class="card-image"
+                src="https://picsum.photos/400/300"
+                alt="sample image"
+              />
+              <h2>E-Commerce</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                voluptates eum dolorum harum minima eos provident, voluptatem
+                atque temporibus optio. Nobis, soluta ipsa. Voluptates cum quam
+                ipsum porro tempora maiores?
+              </p>
+            </div>
+            <div class="business col fade-in">
+              <img
+                class="card-image"
+                src="https://picsum.photos/400/300"
+                alt="sample image"
+              />
+              <h2>Reservation Systems</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                temporibus doloribus dolor odit vel, dicta laudantium at totam
+                consectetur voluptate harum praesentium eaque natus, sunt rerum
+                quisquam voluptates, neque quam!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h1>About us</h1>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h1>Contact</h1>
+          <h3>Let us know a little about your project</h3>
+        </div>
+      </section>
+    </main>
+
+    <footer>
       <div class="container">
-        <h1>Our Website Development Services</h1>
-
+        <a class="logo row">
+          <img
+            src="/assets/images/lighthouse-logo.png"
+            alt="Lighthouse logo"
+            width="50"
+          />
+        </a>
       </div>
-    </section>
+    </footer>
 
-    <section class="about">
-      <div class="container">
-        <h1>About us</h1>
-
-      </div>
-    </section>
-
-    <section class="contact">
-      <div class="container">
-        <h1>Our Website Development Services</h1>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-
-  </footer>
-  <script type="text/javascript" src="/assets/js/script.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js">
+    </script>
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+  </body>
 </html>
