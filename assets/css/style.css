@@ -86,14 +86,23 @@ main {
 .nav-link {
   text-decoration: none;
   color: #FAFAFA;
+  text-shadow: 3px 3px 5px black;
   font-family: 'Quicksand', sans-serif;
   font-size: .9rem;
+}
+
+.nav-link:hover {
+  color: #717577;
 }
 
 .active {
   font-weight: 700;
   padding-bottom: 2px;
   border-bottom: 2px solid #FAFAFA;
+}
+
+.active:hover {
+  border-bottom: 2px solid #717577;
 }
 
 .nav-toggle {
@@ -153,10 +162,19 @@ main {
 .btn {
   font-size: 1rem;
   border: none;
+  box-shadow: 5px 5px 5px black;
   border-radius: 25px;
   padding: 3px 10px 3px 10px;
   color: white;
   background-color: #1fa8ad;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #FAFAFA;
+  text-shadow: 3px 3px 5px black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: .9rem;
 }
 
 .btn:hover, .btn:focus {
@@ -221,7 +239,8 @@ main {
 .hero-heading {
   color: #14cdd3;
   background-color: #3d40448f;
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  text-shadow: 2px 2px 5px black;
   margin: 0 25%;
   text-transform: capitalize;
   padding: 20px;
@@ -235,11 +254,12 @@ main {
 
 .section-title {
   font-size: 1.5em;
-  background-color: #3d40448f;
-  color: #FAFAFA;
+  background-color: #717577;
+  color: #14cdd3;
   display: inline-block;
   padding: .7em;
   border-radius: 45px;
+  box-shadow: 5px 5px 8px #3d40448f;
 }
 
 /* Who Section */

@@ -1,7 +1,7 @@
 
 // Initialise Swiper
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('#hero-swiper', {
   // Optional parameters
   direction: 'horizontal',
   spaceBetween: 0,
