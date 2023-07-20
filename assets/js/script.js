@@ -6,6 +6,7 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   spaceBetween: 0,
   effect: 'fade',
+  zoom: true,
   speed: 2000,
   fadeEffect: {
     crossFade: true
@@ -16,6 +17,18 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
   },
+
+  // zoom: {
+  //   maxRatio: 1.2,
+  //   minRatio: 1
+  // },
+
+  // on: {
+  //   slideChange: function () {
+  //     console.log('clicked!')
+  //     this.zoom.in();
+  //   }
+  // },
 
   // Navigation arrows
   navigation: {
@@ -68,7 +81,7 @@ sections.forEach(section => {
 
 const appearOptions = {
   threshold: 1,
-  rootMargin: "0px 0px -25px 0px"
+  rootMargin: "0px 0px 250px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver
